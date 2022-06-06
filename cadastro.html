@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minha Farmacinha | Novo Medicamento</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./assets/css/base/base.css">
+        <link rel="stylesheet" href="./assets/css/cadastro.css">
+        <link rel="stylesheet" href="./assets/css/componentes/cartao.css">
+        <link rel="stylesheet" href="./assets/css/componentes/inputs.css">
+        <link rel="stylesheet" href="./assets/css/componentes/botao.css">
+    </head>
+
+    <body>
+        <main class="container flex flex--coluna flex--centro">
+            <div class="cadastro-cabecalho">
+                <img src="../CRUD - Farmacinha/assets/img/ursinho.svg" alt="Logo Farmacinha" class="cadastro-cabecalho__logo">
+                <h1 class="cadastro-cabecalho__titulo">Minha Farmacinha</h1>
+            </div>
+            
+            <section class="cartao">
+                <h2 class="cartao__titulo">Cadastro de Medicamento</h2>
+                <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+
+                    <fieldset>
+                        <legend class="formulario__legenda">Informações básicas</legend>
+                        <div class="input-container">
+                            <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
+                            <label class="input-label" for="nome">Nome</label>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input name="dosagem" id="dosagem" class="input" type="text" placeholder="Dosagem" required>
+                            <label class="input-label" for="email">Dosagem</label>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input name="posologia" id="posologia" class="input" type="text" placeholder="Posologia" required>
+                            <label class="input-label" for="posologia">Posologia</label>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="formulario__legenda">Informações complementares</legend>
+                        <div class="input-container">
+                            <input name="especialidade" id="especialidade" class="input" type="text" placeholder="Especialidade" required>
+                            <label class="input-label" for="especialidade">Especialidade</label>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input name="medico" id="medico" class="input" type="text" placeholder="Medico" required>
+                            <label class="input-label" for="medico">Médico (a)</label>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input name="serventia" id="serventia" class="input" type="text" placeholder="Serventia" required>
+                            <label class="input-label" for="serventia">Para que serve</label>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input-container">
+                            <input name="efeitos" id="efeitos" class="input" type="text" placeholder="Efeitos" required>
+                            <label class="input-label" for="efeitos">Possíveis efeitos Colaterais</label>
+                            <span class="input-mensagem-erro">Este campo não está válido</span>
+                        </div>
+                    </fieldset>
+
+                    <button class="botao">Cadastrar</a>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
